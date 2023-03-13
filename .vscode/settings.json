@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "*.tcc": "cpp",
+        "string": "cpp",
+        "atomic": "cpp",
+        "condition_variable": "cpp",
+        "fstream": "cpp",
+        "mutex": "cpp",
+        "ostream": "cpp",
+        "memory": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp",
+        "sstream": "cpp",
+        "streambuf": "cpp"
+    }
+}

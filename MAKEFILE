@@ -1,0 +1,6 @@
+default_target: all
+
+MAKE = gcc
+
+all:
+	$(MAKE) ./base/main.cc -o main
