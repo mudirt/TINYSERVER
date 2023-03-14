@@ -4,6 +4,7 @@
 #include <netinet/tcp.h>
 
 TCPConnection::TCPConnection(EventLoop* loop,
+                            int index,
                             int sockfd,
                             const Address& localaddr,
                             const Address& peeraddr
@@ -13,7 +14,8 @@ TCPConnection::TCPConnection(EventLoop* loop,
     localAddr_(localaddr),
     state_(kConnecting),
     socket_(new Socket(sockfd)),
-    channel_(new Channel(loop,sockfd))
+    channel_(new Channel(loop,sockfd)),
+    index_(index)
 {
 
     channel_->setReadCallback(
@@ -115,6 +117,10 @@ void TCPConnection::handleClose()
 {
     setState(kDisconnected);
     channel_->disableAll();
+
+    TcpConnectionPtr connptr(shared_from_this());
+    ccb_(connptr);
+    
 }
 
 void TCPConnection::handleError()

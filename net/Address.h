@@ -17,15 +17,14 @@ public:
 
     explicit Address(uint16_t port, bool loopbackOnly = false);
 
-    explicit Address(const char* ip, uint16_t port);
+    explicit Address(const char* ip="127.0.0.1", uint16_t port=0);
 
     explicit Address(const Address& addr):addr_(addr.addr_)//传入参数的const属性需一致
     {
     }
 
-    explicit Address(const struct sockaddr_in addr):addr_(addr)
+    explicit Address(const sockaddr_in addr):addr_(addr)
     {
-
     }
 
     const sockaddr_in*  getSocketAddress()const{return &addr_;}
