@@ -1,0 +1,7 @@
+/home/mudirt/netcoding/tinyserver/base/build/CMakeFiles/install/strip.dir
+/home/mudirt/netcoding/tinyserver/base/build/CMakeFiles/install/local.dir
+/home/mudirt/netcoding/tinyserver/base/build/CMakeFiles/install.dir
+/home/mudirt/netcoding/tinyserver/base/build/CMakeFiles/list_install_components.dir
+/home/mudirt/netcoding/tinyserver/base/build/CMakeFiles/rebuild_cache.dir
+/home/mudirt/netcoding/tinyserver/base/build/CMakeFiles/edit_cache.dir
+/home/mudirt/netcoding/tinyserver/base/build/CMakeFiles/base.dir
